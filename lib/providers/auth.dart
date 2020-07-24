@@ -35,8 +35,9 @@ class Auth with ChangeNotifier {
     String password,
     String urlSegment,
   ) async {
+    // NEED FIREBASE API KEY
     final url =
-        'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=AIzaSyBjsypHq0KQZL_08nDx1RI_o9Nk7NsOGP0';
+        'https://identitytoolkit.googleapis.com/v1/accounts:$urlSegment?key=';
     try {
       final response = await http.post(
         url,
